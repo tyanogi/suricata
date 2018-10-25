@@ -505,10 +505,10 @@ PTXS += $(suricata_CUDA_KERNELS:.cu=.ptx_sm_52)
 PTXS += $(suricata_CUDA_KERNELS:.cu=.ptx_sm_53)
 
 .cu.ptx_sm_20:
-	$(NVCC) $(NVCCFLAGS) -o $@ -arch=sm_20 -ptx $<
+	$(NVCC) $(NVCCFLAGS) -o $@ -arch=sm_30 -ptx $<
 
 .cu.ptx_sm_21:
-	$(NVCC) $(NVCCFLAGS) -o $@ -arch=sm_21 -ptx $<
+	$(NVCC) $(NVCCFLAGS) -o $@ -arch=sm_31 -ptx $<
 
 .cu.ptx_sm_30:
 	$(NVCC) $(NVCCFLAGS) -o $@ -arch=sm_30 -ptx $<

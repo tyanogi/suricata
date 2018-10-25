@@ -1130,7 +1130,8 @@ void SCCudaPrintDeviceList(SCCudaDevices *devices)
                    (devices->devices[i]->attr_can_map_host_memory) ? "Yes": "No");
         if (devices->devices[i]->attr_compute_mode == CU_COMPUTEMODE_DEFAULT)
             SCLogDebug("Device Compute Mode: CU_COMPUTEMODE_DEFAULT");
-        else if (devices->devices[i]->attr_compute_mode == CU_COMPUTEMODE_EXCLUSIVE)
+        //else if (devices->devices[i]->attr_compute_mode == CU_COMPUTEMODE_EXCLUSIVE)
+        else if (devices->devices[i]->attr_compute_mode == CU_COMPUTEMODE_EXCLUSIVE_PROCESS)
             SCLogDebug("Device Compute Mode: CU_COMPUTEMODE_EXCLUSIVE");
         else if (devices->devices[i]->attr_compute_mode == CU_COMPUTEMODE_PROHIBITED)
             SCLogDebug("Device Compute Mode: CU_COMPUTEMODE_PROHIBITED");
