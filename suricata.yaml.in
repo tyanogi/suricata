@@ -111,7 +111,7 @@ rule-files:
 ## - ntp-events.rules       # available in suricata sources under rules dir
 
 classification-file: /opt/suricata/classification.config
-reference-config-file: /opt/suricata/suricata/reference.config
+reference-config-file: /opt/suricata/reference.config
 threshold-file: /opt/suricata/threshold.config
 #classification-file: @e_sysconfdir@classification.config
 #reference-config-file: @e_sysconfdir@reference.config
